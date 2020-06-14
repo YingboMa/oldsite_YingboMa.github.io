@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.72.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Convergence of infinite tetration&nbsp;&ndash;&nbsp;Yingbo Ma</title><link rel="stylesheet" href="/css/core.min.802aa67397694ca5d7cacc2140e5e8fcb52d3add493941c161a3c4d2d5da57e3ca230e49da9cc38312e9698b71ef4c3a.css" integrity="sha384-gCqmc5dpTKXXyswhQOXo/LUtOt1JOUHBYaPE0tXaV&#43;PKIw5J2pzDgxLpaYtx70w6"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Convergence of infinite tetration" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Yingbo Ma</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a><a class="nav item" href="/about">About Me</a></nav></div></span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Convergence of infinite tetration</h1><p class="article date">Sunday, June 14, 2020</p></section><article class="article markdown-body"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<blockquote>
+<p>I tell you that studying humanities in high school is more important than
+mathematics - mathematics is too sharp an instrument, no good for kids.</p>
+<p>&mdash; Stefan Banach</p>
+</blockquote>
+<p>Tetration is defined as</p>
+<p>$$
+^{n}a=\underbrace{a^{a^{\cdot ^{\cdot ^{a}}}}}_{n}.
+$$</p>
+<p>Naturally, we can define infinite tetration as</p>
+<p>$$
+\lim_{n\to\infty} {^{n}}a, \quad n \in \mathbb{N},
+$$</p>
+<p>and it converges to a unique fixed point when $a \in [e^{-e}, e^{\frac{1}{e}}]$.</p>
+<!--more-->
+<h2 id="proof">Proof</h2>
+<p>Tetration can be viewed as iterating the mapping $f_a(x) = a^x$. E.g.,
+${^{3}}2 = f_{2}(f_{2}(2)) = 2^{2^{2}}$.</p>
+<p>By Banach fixed point theorem, we know that there exists a unique fixed point
+if the Lipschitz constant of the mapping $T: X\mapsto X$ is smaller than
+$1$.</p>
+<p>Given that the function $f$ is continuously differentiable in $[a, b]$, we
+can show that if $\forall x \in [a, b], f&rsquo;(x) \le K$, for any distinct points
+$c,d\in [a, b]$, we have</p>
+<p>$$
+\underbrace{\left|\frac{f(d)-f(c)}{d-c}\right|}_\text{Lipschitz constant} =
+|f&rsquo;(\gamma)| \le K, \text{ where } \gamma \in [a, b],
+$$</p>
+<p>by mean value theorem.</p>
+<p>Hence, infinite tetration converges to a unique fixed point when $|f_a'|&lt;1$
+(this can be made rigorous by defining the metric as $||f_a'||_\infty =
+\sup_{x\in I} f_a&rsquo;(x)$).</p>
+<p>$$
+\begin{align}
+f_a&rsquo;(x) &amp;= a^x \ln a \\<br>
+-1 &lt; &amp;a^x \ln a &lt; 1 \\<br>
+\frac{-1}{\ln a} &lt; &amp;a^x &lt; \frac{1}{\ln a} \\<br>
+\frac{\ln{\frac{-1}{\ln a}}}{\ln a} &lt; &amp;x &lt; \frac{\ln{\frac{1}{\ln a}}}{\ln a}.
+\end{align}
+$$</p>
+<p>Plugging the results into the fixed point equation $x = f_a(x)$ (we can do
+this because $f_a$ is continuous and monotonic), we will obtain the lower
+bound and the upper bound, respectively.</p>
+<p>The lower bound is</p>
+<p>$$
+\begin{align}
+\frac{\ln{\frac{-1}{\ln a_-}}}{\ln a_-} &amp;= \frac{-1}{\ln a_-} \\<br>
+\ln{\frac{-1}{\ln a_-}} &amp;= -1 \\<br>
+\frac{-1}{\ln a_-} &amp;= e^{-1} \\<br>
+\ln a_- &amp;= -e \\<br>
+a_- &amp;= e^{-e}.
+\end{align}
+$$</p>
+<p>The upper bound is</p>
+<p>$$
+\begin{align}
+\frac{\ln{\frac{1}{\ln a_+}}}{\ln a_+} &amp;= \frac{1}{\ln a_+} \\<br>
+\ln{\frac{1}{\ln a_+}} &amp;= 1 \\<br>
+\frac{1}{\ln a_+} &amp;= e \\<br>
+\ln a_+ &amp;= \frac{1}{e} \\<br>
+a_+ &amp;= e^{\frac{1}{e}}.
+\end{align}
+$$</p>
+<p>We know that infinite tetration converges when $a \in (e^{-e},
+e^{\frac{1}{e}})$. When $a=e^{-e}$ or $a=e^{\frac{1}{e}}$, it is precisely
+at the fixed point. Hence, it converges to a unique fixed point when $a \in
+[e^{-e}, e^{\frac{1}{e}}].\quad\blacksquare$</p></article><section class="article labels"><a class="category" href=/categories/math/>math</a><a class="tag" href=/tags/real-analysis/>real analysis</a></section><section class="article license"><a rel=license href=http://creativecommons.org/licenses/by/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by/4.0/>Creative Commons Attribution 4.0 International License</a>.</section></div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/post/2020-06-14-taylorvsfourier/"><span class="iconfont icon-article"></span>Taylor series, Fourier series, and Cauchy's integral formula</a></p></section></div></section><section id="footer"><div class="footer-wrap">
+    <p class="copyright">©2020 Yingbo Ma.</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-e/4/LvThKH1gwzXhdbY2AsjR3rm7LHWyhIG5C0jiRfn8AN2eTN5ILeztWw0H9jmN" crossorigin="anonymous"></script>
+        <script
+            type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script></body>
+
+</html>

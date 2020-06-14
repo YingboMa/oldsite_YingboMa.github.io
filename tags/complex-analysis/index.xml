@@ -1,100 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Yingbo Ma</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Yingbo Ma</description>
+    <title>complex analysis on Yingbo Ma</title>
+    <link>/tags/complex-analysis/</link>
+    <description>Recent content in complex analysis on Yingbo Ma</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>©2020 Yingbo Ma.</copyright>
     <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/complex-analysis/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Convergence of infinite tetration</title>
-      <link>/post/2020-06-14-infinitetetration/</link>
-      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2020-06-14-infinitetetration/</guid>
-      <description>&lt;script type=&#34;text/javascript&#34; src=&#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;&gt;&lt;/script&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I tell you that studying humanities in high school is more important than
-mathematics - mathematics is too sharp an instrument, no good for kids.&lt;/p&gt;
-&lt;p&gt;&amp;mdash; Stefan Banach&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-      
-      <content:encoded><![CDATA[<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<blockquote>
-<p>I tell you that studying humanities in high school is more important than
-mathematics - mathematics is too sharp an instrument, no good for kids.</p>
-<p>&mdash; Stefan Banach</p>
-</blockquote>
-<p>Tetration is defined as</p>
-<p>$$
-^{n}a=\underbrace{a^{a^{\cdot ^{\cdot ^{a}}}}}_{n}.
-$$</p>
-<p>Naturally, we can define infinite tetration as</p>
-<p>$$
-\lim_{n\to\infty} {^{n}}a, \quad n \in \mathbb{N},
-$$</p>
-<p>and it converges to a unique fixed point when $a \in [e^{-e}, e^{\frac{1}{e}}]$.</p>
-<!--more-->
-<h2 id="proof">Proof</h2>
-<p>Tetration can be viewed as iterating the mapping $f_a(x) = a^x$. E.g.,
-${^{3}}2 = f_{2}(f_{2}(2)) = 2^{2^{2}}$.</p>
-<p>By Banach fixed point theorem, we know that there exists a unique fixed point
-if the Lipschitz constant of the mapping $T: X\mapsto X$ is smaller than
-$1$.</p>
-<p>Given that the function $f$ is continuously differentiable in $[a, b]$, we
-can show that if $\forall x \in [a, b], f&rsquo;(x) \le K$, for any distinct points
-$c,d\in [a, b]$, we have</p>
-<p>$$
-\underbrace{\left|\frac{f(d)-f(c)}{d-c}\right|}_\text{Lipschitz constant} =
-|f&rsquo;(\gamma)| \le K, \text{ where } \gamma \in [a, b],
-$$</p>
-<p>by mean value theorem.</p>
-<p>Hence, infinite tetration converges to a unique fixed point when $|f_a'|&lt;1$
-(this can be made rigorous by defining the metric as $||f_a'||_\infty =
-\sup_{x\in I} f_a&rsquo;(x)$).</p>
-<p>$$
-\begin{align}
-f_a&rsquo;(x) &amp;= a^x \ln a \\<br>
--1 &lt; &amp;a^x \ln a &lt; 1 \\<br>
-\frac{-1}{\ln a} &lt; &amp;a^x &lt; \frac{1}{\ln a} \\<br>
-\frac{\ln{\frac{-1}{\ln a}}}{\ln a} &lt; &amp;x &lt; \frac{\ln{\frac{1}{\ln a}}}{\ln a}.
-\end{align}
-$$</p>
-<p>Plugging the results into the fixed point equation $x = f_a(x)$ (we can do
-this because $f_a$ is continuous and monotonic), we will obtain the lower
-bound and the upper bound, respectively.</p>
-<p>The lower bound is</p>
-<p>$$
-\begin{align}
-\frac{\ln{\frac{-1}{\ln a_-}}}{\ln a_-} &amp;= \frac{-1}{\ln a_-} \\<br>
-\ln{\frac{-1}{\ln a_-}} &amp;= -1 \\<br>
-\frac{-1}{\ln a_-} &amp;= e^{-1} \\<br>
-\ln a_- &amp;= -e \\<br>
-a_- &amp;= e^{-e}.
-\end{align}
-$$</p>
-<p>The upper bound is</p>
-<p>$$
-\begin{align}
-\frac{\ln{\frac{1}{\ln a_+}}}{\ln a_+} &amp;= \frac{1}{\ln a_+} \\<br>
-\ln{\frac{1}{\ln a_+}} &amp;= 1 \\<br>
-\frac{1}{\ln a_+} &amp;= e \\<br>
-\ln a_+ &amp;= \frac{1}{e} \\<br>
-a_+ &amp;= e^{\frac{1}{e}}.
-\end{align}
-$$</p>
-<p>We know that infinite tetration converges when $a \in (e^{-e},
-e^{\frac{1}{e}})$. When $a=e^{-e}$ or $a=e^{\frac{1}{e}}$, it is precisely
-at the fixed point. Hence, it converges to a unique fixed point when $a \in
-[e^{-e}, e^{\frac{1}{e}}].\quad\blacksquare$</p>]]></content:encoded>
-      
-    </item>
     
     <item>
       <title>Taylor series, Fourier series, and Cauchy&#39;s integral formula</title>
