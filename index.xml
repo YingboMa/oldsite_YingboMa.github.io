@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Yingbo Ma</title>
+    <link>/</link>
+    <description>Recent content on Yingbo Ma</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>©2020 Yingbo Ma.</copyright>
+    <lastBuildDate>Sun, 14 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>A few things about me  I am interested in researching new algorithms and writing fast software implementations to accelerate numerical integration for stiff ordinary differential equations and differential-algebraic equations. These equations are an integral part of modeling for mechanical, chemical, and biological systems. I like reading fantasy novels during my leisure time. I am working on my sleep schedule.  A few of my projects  OrdinaryDiffEq.jl. A collection of algorithms for solving ordinary differential equations and differential-algebraic equations.</description>
+      
+      <content:encoded><![CDATA[<h2 id="a-few-things-about-me">A few things about me</h2>
+<ul>
+<li>I am interested in researching new algorithms and writing fast software
+implementations to accelerate numerical integration for <a href="http://www.scholarpedia.org/article/Stiff_system"target="_blank">stiff ordinary
+differential equations</a> and
+<a href="http://www.scholarpedia.org/article/Differential-algebraic_equations"target="_blank">differential-algebraic
+equations</a>.
+These equations are an integral part of modeling for mechanical, chemical, and
+biological systems.</li>
+<li>I like reading fantasy novels during my leisure time.</li>
+<li>I am working on my sleep schedule.</li>
+</ul>
+<h2 id="a-few-of-my-projects">A few of my projects</h2>
+<ul>
+<li><a href="https://github.com/SciML/OrdinaryDiffEq.jl"target="_blank">OrdinaryDiffEq.jl</a>. A collection
+of algorithms for solving ordinary differential equations and
+differential-algebraic equations.</li>
+<li><a href="https://github.com/SciML/ModelingToolkit.jl"target="_blank">ModelingToolkit.jl</a>. A modeling
+framework for automatically parallelized scientific computing.</li>
+<li><a href="https://github.com/SciML/DiffEqFlux.jl"target="_blank">DiffEqFlux.jl</a>. A package for neural
+differential equations.</li>
+<li><a href="https://github.com/SciML/DiffEqSensitivity.jl"target="_blank">DiffEqSensitivity.jl</a>. A
+package for doing sensitivity analysis.</li>
+<li><a href="https://github.com/YingboMa"target="_blank">Assorted packages</a></li>
+</ul>
+<h2 id="contact-information">Contact Information</h2>
+<p>You can find me in the Julia Slack. You can also email me at <code>mayingbo5 (_*at*_) gmail.com</code></p>
+]]></content:encoded>
+      
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/</guid>
+      <description></description>
+      
+      <content:encoded><![CDATA[]]></content:encoded>
+      
+    </item>
+    
+  </channel>
+</rss>
